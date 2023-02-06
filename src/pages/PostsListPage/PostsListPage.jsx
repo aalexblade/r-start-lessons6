@@ -4,10 +4,12 @@ import debounce from 'lodash/debounce';
 import { useSearchParams } from 'react-router-dom';
 
 import { NotFound } from '../../components/NotFound/NotFound';
-import { PostsItem } from '../../components/Posts/PostsItem';
-import { PostsLoader } from '../../components/Posts/PostsLoader';
+// import { PostsItem } from '../../components/Posts/PostsItem';
+// import { PostsLoader } from '../../components/Posts/PostsLoader';
 import { STATUS } from '../../constants/status.constants';
 import { getPosts } from '../../services/posts.service';
+import { PostsItem } from '../../components/Posts/components/PostsItem';
+import { PostsLoader } from '../../components/Posts/components/PostsLoader';
 
 const PostsListPage = () => {
   const [posts, setPosts] = useState(null);
